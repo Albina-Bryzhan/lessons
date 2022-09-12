@@ -1,0 +1,16 @@
+
+.orange-text {
+   color: orange;
+}
+
+.h3-red h3 {
+   color: red;
+}
+
+.simple-text + p {
+   color: green;
+}
+
+.brown-text > p {
+   color: brown ;
+}
