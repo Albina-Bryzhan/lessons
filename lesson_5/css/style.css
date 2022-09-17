@@ -31,7 +31,8 @@ body {
    
 }
 
-.header-background, .footer {
+.header-background,
+.footer {
    background-color: #CABCBC  
 }
 
@@ -80,15 +81,17 @@ img{
 }
 
 .pseudonym p{
-   text-indent: 20px;
    font-family: "Montserrat", sans-serif;
    font-weight: 400;
    font-size: 14px;
    letter-spacing: 2px;
    line-height: 1.2;
+   text-indent: 20px;
 }
 
-.biography-gromov, .biography-ladyzhensky, .books{
+.biography-gromov, 
+.biography-ladyzhensky, 
+.books{
    margin: 20px;
    text-align: justify;
 }
@@ -136,9 +139,50 @@ img{
    text-indent: 20px;
 }
 
+.couplet-1 {
+   font-style: normal;
+   text-align: left;
+   text-decoration: overline;
+   text-transform: capitalize;
+}
+
+.couplet-2 {
+   font-style: oblique;
+   text-align: center;
+   text-decoration: underline;
+   text-transform: lowercase;
+   word-spacing: 10px;
+}
+
+.couplet-3 {
+   font-style: italic;
+   text-align: right;
+   text-transform: uppercase;
+}
+
+.rus {
+   text-decoration: line-through;
+}
+
+.poetry > p{
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.poetry ~ p{
+   font-family: "Taviraj", serif;
+   font-weight: 400;
+   font-size: 16px;
+   font-style: italic;
+}
+
+.poetry + p{
+   letter-spacing: 5px;
+}
+
+
 .footer{
    text-indent: 30px;
    padding: 20px;
-   text-decoration: underline;
-
 }
