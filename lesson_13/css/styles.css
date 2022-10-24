@@ -1,0 +1,210 @@
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff"), format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+[class*="__container"]{
+   max-width: 1230px;
+   margin: 0 auto;
+}
+.page__container{
+   height: 860px;
+}
+.wrapper{
+   overflow: hidden;
+   position: relative;
+	min-height: 100%;
+	padding: 20px;
+   background-color: #dae3e4;
+}
+.article__text > span{
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   font-style: normal;
+   line-height: 1.3;
+   color: #424551;
+   margin-left: 30px;
+}
+.text__star::before{
+   background: url("../img/Star.svg") 0 5px no-repeat;
+   content: "";
+   width: 16px;
+   min-height: 22px;
+   display: inline-block;
+   margin-right: 16px;
+   animation-name: object-rotate;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+.text__heart::before{
+   background: url("../img/Heart.svg") 0 5px no-repeat;
+   content: "";
+   width: 16px;
+   min-height: 22px;
+   display: inline-block;
+   margin-right: 16px;
+   animation-name: object-scale;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+} 
+.text__cube::before{
+   content: "";
+   width: 16px;
+   height: 16px;
+   top: 0;
+   left: 0;
+   border: 1px solid #ee3838;
+   border-radius: 50%/0;
+   border-radius: 2px;
+   display: inline-block;
+   margin-right: 16px;
+   animation-name: object-rotate;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes object-rotate{
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
+@keyframes object-scale{
+   0%{
+      transform: scale(0.5,0.5);
+   }
+   100%{
+      transform: scale(1.3, 1.3);
+   }
+}
+/* =======================nature=============== */
+.page__animation{
+   position: relative;
+}
+.nature__sun{
+   border-radius: 50%;
+   width: 90px;
+   height: 90px;
+   background-color: #ebe4a8;
+   position: absolute;
+   top: 50px;
+   right: 350px;
+}
+.nature__bird{
+   background: url("../img/bird1.svg") 0 0 no-repeat;
+   width: 90px;
+   height: 90px;
+   position: absolute;
+   top: 50px;
+}
+.nature__bird--1{
+   top: 100px;
+   left: 120px;
+}
+.nature__bird--4{
+   top: 150px;
+   left: 230px;
+}
+.nature__bird--2{
+   top: 150px;
+   right: 120px;
+   transform: rotateY(180deg);
+}
+.nature__bird--3{
+   top: 100px;
+   right: 120px;
+   transform: rotateY(180deg);
+}
+.nature__sea{
+   background-color: #6fb0e6;
+   width: 100%;
+   height: 200px;
+   position: absolute;
+   top: 600px;
+}
+.nature__iceberg{
+   background: url("../img/iceberg1.svg") 0 0 no-repeat;
+   width: 300px;
+   height: 190px;
+   position: absolute;
+   top: 620px;
+   right: 20px;
+   z-index: 1;
+   transform: scale(0.75);
+   animation: iceberg 2s linear infinite alternate;
+}
+.nature__iceberg2{
+   background: url("../img/iceberg2.svg") 0 0 no-repeat;
+   width: 300px;
+   height: 190px;
+   position: absolute;
+   z-index: 1;
+   top: 580px;
+   right: 560px;
+   animation: iceberg-translate 2s linear infinite alternate;
+}
+.nature__iceberg3{
+   background: url("../img/iceberg3.svg") 0 0 no-repeat;
+   width: 300px;
+   height: 190px;
+   position: absolute;
+   z-index: 1;
+   top: 620px;
+   left: 60px;
+   animation: iceberg 2s linear infinite alternate; 
+}
+.nature__iceberg3--2{
+   top: 700px;
+   left: 500px;
+   animation: iceberg-translate 2s linear infinite alternate;
+}
+@keyframes iceberg{
+   0%{
+      transform: rotate(5deg);
+   }
+   50%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(-5deg);
+   }
+}
+@keyframes iceberg-translate{
+   0%{
+      transform: translate(15px) scale(0.75);
+   }
+   100%{
+      transform: translate(0px) scale(0.75);
+   }
+}
+/* =======================ship======================= */
+.ship__body{
+   background: url("../img/ship.svg") 0 0 no-repeat;
+   width: 250px;
+   height: 150px;
+   position: absolute;
+   top: 510px;
+   left: 0px;
+   animation: ship 10s linear forwards;         
+}
+  @keyframes ship{
+   0%{
+     transform: translate(0px, 0px);
+   }
+   40%{ 
+      transform: translate(450px, 0px);
+   }
+   70%{
+      transform: translate(450px, 0px);
+   }
+   100%{
+      transform: translate(1020px, 0px);
+   }
+}  
