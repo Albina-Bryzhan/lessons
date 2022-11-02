@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson 16</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <!-- Flex- container-->
+         <div class="header__container">
+            <!-- Flex-element -->
+            <a href="" class="header__logo">
+               <img src="img/logo.svg" alt="logo">
+            </a>
+             <!-- Flex-element -->
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item">
+                     <a href="" class="menu__link">About Us</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Courses</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Events</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Contacts</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__actions actions-header">
+               <a href="" class="actions-header__button button"><span>Get consultation</span></a>
+               <a href="" class="actions-header__auth"><span>Log in</span></a>
+               <a href="" class="actions-header__auth"><span>Register</span></a>
+            </div>
+         </div>
+      </header>
+
+      <main>
+         <div class="page">
+            <section class="page__drop drop-block">
+               <div class="drop-block__container">
+                  <div class="drop-block__body body-drop">
+                     <div class="body-drop__media">
+                        <img class="body-drop__image" src="img/illustration2.svg" alt="illustration">
+                     </div>
+                     <div class="body-drop__content">
+                        <div class="body-drop__titles titles">
+                           <h3 class="body-drop__subtitle subtitle">Any questions?</h3>
+                           <h2 class="body-drop__title title">Drop us a line</h2>
+                        </div>
+                        <div class="body-drop__forms form">
+                           <form class="form" method="GET" action="#">
+                              <div class="form__line">
+                                 <label class="form__lable" for="Your-first-name">First Name*</label>
+                                 <input class="form__input" id="Your-first-name" required autocomplete="off" placeholder="Your first name" name="First Name*" type="text">
+                              </div>
+                              <div class="form__line">
+                                 <label class="form__lable" for="Your-last-name">Last Name*</label>
+                                 <input class="form__input" id="Your-last-name" required autocomplete="off" placeholder="Your last name" name="Last Name*" type="text">
+                              </div>                     
+                              <div class="form__line">
+                                 <label class="form__lable" for="Email">Email*</label>
+                                 <input class="form__input" id="Email" required autocomplete="off" placeholder="Your working email" name="Email*" type="email">
+                              </div>
+                              <div class="form__line">
+                                 <label class="form__lable" for="Phone">Phone</label>
+                                 <input class="form__input" id="Phone" autocomplete="off" placeholder="Your phone number" name="Phone*" type="tel">
+                              </div>
+                              <div class="form1__line">
+                                 <label class="form1__lable" for="Massage">Massage*</label> 
+                                 <textarea class="form1__area" id="Massage" required autocomplete="off" placeholder="Your message" name="Massage*"></textarea>
+                              </div> 
+                           </form>
+                        </div>
+
+                        <div class="body-drop__actions actions">
+                           <form class="actions__form" action="#" method="get">
+                              <div class="actions__line">
+                                 <div class="checkbox">
+                                    <input checked class="checkbox__input" id="Agreement" required  name="Agreement" type="checkbox" value="yes">
+                                    <label class="checkbox__lable" for="Agreement"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label> 
+                                 </div>
+                              </div>
+                           </form>
+                           <a href="#" class="actions__button button"><span>Send message</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="page__radio radio">
+               <div class="radio__container">
+                  <div class="radio__titles titles">
+                     <h3 class="radio__subtitle subtitle">Example</h3>
+                     <h2 class="radio__title title">Radio-button</h2>
+                  </div>
+                  <div class="radio__forms form">
+                     <form class="form" method="GET" action="#">
+                        <div class="form__line">
+                           <div class="form__title">What courses do you choose?</div>
+                           <div class="form__box">
+                              <div class="form__radio">
+                                 <input checked class="form__input form__input--radio" id="Course-01" value="Marketing" required name="Courses" type="radio">
+                                 <label class="form__lable form__lable--radio" for="Course-01"> <span class="form__text--radio"> Marketing</span></label>
+                              </div>
+                              <div class="form__radio">
+                                 <input class="form__input form__input--radio" id="Course-02" value="HR & Recruting" required name="Courses" type="radio">
+                                 <label class="form__lable  form__lable--radio" for="Course-02"><span class="form__text--radio">HR & Recruting</span></label>
+                              </div>
+                              <div class="form__radio">
+                                 <input class="form__input form__input--radio" id="Course-03" value="Management" required name="Courses" type="radio">
+                                 <label class="form__lable  form__lable--radio" for="Course-03"><span class="form__text--radio">Management</span></label>
+                              </div>
+                              <div class="form__radio">
+                                 <input class="form__input form__input--radio" id="Course-04" value="Design" required name="Courses" type="radio">
+                                 <label class="form__lable  form__lable--radio" for="Course-04"><span class="form__text--radio">Design</span></label>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </section>
+           
+         </div>
+      </main>
+
+      <footer class="footer"></footer>
+   </div>
+</body>
+</html>
