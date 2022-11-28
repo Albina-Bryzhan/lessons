@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 22</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header>
+
+      </header>
+  
+      <main>
+         <div class="page">
+            <div class="page__container">
+               <h1>Домашня робота по JavaScript (1 частина)</h1>
+               <section class="page__syntax">
+                  <h2>Основи синтаксису JavaScript</h2>
+                  <p>Який з варіантів викликає помилку?</p>
+                  <h4>Варіант №1</h4>
+                  <p>
+                     "use srtict" <br>
+                     console.log('Вчимо JS')
+                  </p> 
+                  <h5>Помилку НЕ викликає в цьому випадку, але наприкінці краще поставити крапку з комою (;) бо за правилом №1 після КОЖНОЇ інструкції ми це маємо робити</h5>
+                  <h4>Варіант №2</h4>
+                  <p>
+                     "use srtict" <br>
+                     console.log('JS') <br>
+                     console.log('Вчимо')
+                  </p> 
+                  <h5>Помилку НЕ викликає і в цьому випадку, але наприкінці КОЖНОЇ інструкції краще поставити крапку з комою (;). Бо у випадку, коли між цими двома строками з'явиться ще якийсь код, то буде помилка.</h5>
+                  <h4>Варіант №3</h4>
+                  <p>
+                     "use srtict" <br>
+                     console.log('Вчимо') console.log('JS')
+                  </p> 
+                  <h5><span>Викликає синтаксичну помилку.</span>В цьому випадку крапка з комою (;) НЕОБХІДНА для відокремлення двох інструкцій</h5>
+                  <h4>Варіант №4</h4>
+                  <p>
+                     "use srtict" <br>
+                     console.log('Вчимо); <br>
+                     console.log('JS');
+                  </p> 
+                  <h5><span>Викликає синтаксичну помилку.</span>Треба поставити лапку(') після слова 'Вчимо</h5>
+               </section>
+               <section class="page__let">
+                  <h2>Змінні та константи</h2>
+                  <p>
+                     1) Ім'я змінної для збереження кольору очей користувача сайту
+                  </p>
+                  <p>
+                     let eyeColor;
+                  </p>
+                  <p>
+                     2) Передача значень змінних:<br>
+                        let user; <br>
+                        let userName;<br>
+                        userName = 'Вася';<br>
+                        console.log(userName);<br>
+                        user = userName;<br>
+                        console.log(user);<br>
+                  </p>
+                  <p>3) Який з варіантів записаний з помилкою?</p> 
+                  <h4>Варіант №1</h4>   
+                  let user = 'Вася' let age = 36
+                  <h5><span>Викликає синтаксичну помилку.</span>Необхідна крапка з комою (;) після let user = 'Вася' для відокремлення двох інструкцій. Краще записати в два рядки і наприкінці також поставити крапку з комою. </h5>
+                  <h4>Варіант №2</h4>   
+                  <p>let myage = 36;</p>  
+                  <h5>myage має бути myAge в стилі lowerCamelCase</h5>
+                  <h4>Варіант №3</h4>   
+                  <p>const BLOCK_SIZE = 14 + 50; </p> 
+                  <h5>Запис вірний</h5>
+                  <h4>Варіант №4</h4>   
+                  <p>const BLOCK_HEIGHT = 100; </p> 
+                  <h5>Запис вірний</h5>
+                  <h4>Варіант №5</h4>   
+                  <p>if (true) {<br>
+                     var size = 15;<br>
+                  }<br>
+                  console.log(size);</p> 
+                  <h5>Запис вірний</h5>
+               </section>
+               <section class="page__typeof">
+                  <h2>Типи данних</h2>
+                  <p>3) Який з варіантів невірний?</p> 
+                  <h4>Варіант №1</h4>   
+                  let userAge = 36;<br>
+                  let userInfo = "Фрілансер ${userAge}";
+                  <h5><span>Запис невірний.</span>Треба використовувати зворотні кавички для `Фрілансер ${userAge}`</h5>
+                  <h4>Варіант №2</h4>   
+                  <p>let userHeight = 145 / 0;<br>
+                     console.log(userHeight);<br>
+                     console.log(typeof userHeight);</p>  
+                  <h5>Вернеться <span>НЕ NaN</span> вернеться значення Infinity, тип - число </h5>
+                  <h4>Варіант №3</h4>   
+                  <p>let userName;<br>
+                     console.log(typeof userName);</p> 
+                  <h5>Вернеться тип даних <span>НЕ Null</span> вернеться тип даних Undefined (не визначено)</h5>
+                  <h4>Варіант №4</h4>   
+                  <p>let userSize = "45" / "8";<br>
+                     console.log(typeof userSize); </p> 
+                  <h5>Вернеться тип данних Number. Це вірно.</h5>
+               </section>
+            </div>
+         </div>
+      </main>
+  
+      <footer>     
+      </footer>
+   </div>
+   
+<script src="js/sctipt.js"></script>
+</body>
+</html>
