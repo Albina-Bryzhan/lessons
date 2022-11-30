@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+   font-family: "Lato", sans-serif;
+   color: #424551;
+   font-size: 0.875rem;
+   background: linear-gradient(90deg, #f3c4fb,#e2afff,#c8e7ff);
+   line-height: 130%;
+   padding: 1.3rem;
+}
+.wrapper{
+   overflow: hidden;
+   position: relative;
+	min-height: 100%;
+
+	display: flex;
+   flex-direction: column; 
+}
+.wrapper > main{
+   flex-grow: 1;
+}
+/* ===================================== */
+/* Обмежуючий контейнер */
+[class*="__container"]{
+   max-width: 78.75rem;
+   margin: 0 auto;
+   padding-left: 0.9375rem;
+   padding-right: 0.9375rem;
+}
+/* ===================== */
+h1{
+   font-size: 2rem;
+   font-weight: 900;
+   line-height: 130%;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+}
+section{
+   margin-bottom: 1rem;
+}
+h2{
+   font-size: 1rem;
+   font-weight: 700;
+   line-height: 130%;
+}
+.var{
+   text-decoration: underline;
+}
+span{
+   color: rgb(219, 6, 6);
+   font-weight: 700;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 23</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header>
+      </header>
+  
+      <main>
+         <div class="page">
+            <div class="page__container">
+               <h1>Домашня робота по JavaScript (2 частина)</h1>
+               <section class="page__operator">
+                  <h2>Оператори JavaScript</h2>
+                  <p>Які з віріантів невірні?</p>
+                  <p class="var">Вaріант №1</p>
+                  <p>console.log('35' + - "22");</p>
+                  <p><span>Верне НЕ 13.</span> Верне 35-22, тому що строки при додаванні (їх значення) будуть виводитися в рядок</p>
+                  <p class="var">Вaріант №2</p>
+                  <p>console.log('35' * "22");</p>
+                  <p>Верне 770. Відповідь вірна. Оператор множення переводить значення string в number</p>
+                  <p class="var">Вaріант №3</p>
+                  <p>console.log('558' > 22++);</p>
+                  <p><span>НЕ Верне true.</span> Синтаксична помилка. Інкремент має бути примінений тілько до змінної</p>
+                  <p class="var">Вaріант №4</p>
+                  <p>let usersCounter = 0;<br>
+                     let newUsers = usersCounter++;<br>
+                     console.log(newUsers);
+                     </p>
+                  <p><span>НЕ Верне 1.</span> Верне 0, бо інкремент з постфіксним записом</p>
+                  <p class="var">Вaріант №5</p>
+                  <p>console.log(!false && 11 || 18 && !'');
+                  </p>
+                  <p><span>Верне НЕ 18.</span> Верне 11, бо це перший true</p>
+                  <p class="var">Вaріант №6</p>
+                  <p>let name = 0;<br>
+                     console.log(name ?? "Без імені");
+                  </p>
+                  <p> Верне 0, бо це перший аргумент, який не null  і не undefined</p>
+               </section>
+               <section class="page__condition">
+                  <h2>Умовне вітвлення: if, '?' в JavaScript</h2>
+                  <p>Які з віріантів невірні?</p>
+                  <p class="var">Вaріант №1</p>
+                  <p><span>Брехня!</span>  Тому що результат умови НЕ true</p>
+                  <p class="var">Вaріант №2</p>
+                  <p>Правда! Тому що результат умови  true</p>
+                  <p class="var">Вaріант №3</p>
+                  <p>Правда! Тому що результат умови  true</p>
+                  <p class="var">Вaріант №4</p>
+                  <p>Правда! Бо перша умова не спрацює (0 - це false), потім буде шукати "else if".</p>
+               </section>
+               <section class="page__cycle">
+                  <h2>Цикли: for, while в JavaScript</h2>
+                  <p>Задачі в файлі script.js</p>
+               </section>
+               <section class="page__number">
+                  <h2>Number в JavaScript</h2>
+                  <p>Задачі в файлі script.js</p>
+               </section>
+               <section class="page__string">
+                  <h2>String в JavaScript</h2>
+                  <p>Задачі в файлі script.js</p>
+                  <p class="var">Задача №1</p>
+                  <p><span>Запис НЕвірний</span>  Треба вираз Hi! I am ${fls} огорнути в зворотні кавички</p>
+                  <p class="var">Задача №3</p>
+                  <p><span>Очікуваного 579 НЕ буде</span>  Бо при додаванні строки і числа, результатом буде строка, значення якої будуть записані в рядок.</p>
+                  <p class="var">Задача №6</p>
+                  <p><span>FALSE</span>  Тому що 'лан' починається з 3-го символа, а функція шукає з 4-го.</p>
+               </section>
+            </div>
+         </div>
+      </main>
+  
+      <footer>     
+      </footer>
+   </div>
+   
+<script src="js/sctipt.js"></script>
+</body>
+</html>
